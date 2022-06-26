@@ -61,10 +61,11 @@
 			} elseif ($matkhau != $rematkhau) {
 				echo "mat khau chua trung";
 			} else {
-				$sql_dangky = "INSERT INTO tbl_dangky(hovaten,taikhoan,matkhau,sodienthoai,email,diachi,chucvu) 
-				VALUE('" . $tenkhachhang . "','" . $taikhoan . "','" . $matkhau . "','" . 
+				$sql_dangky = "INSERT INTO tbl_dangky(hovaten,taikhoan,matkhau,sodienthoai,email,diachi) 
+				VALUES('" . $tenkhachhang . "','" . $taikhoan . "','" . $matkhau . "','" . 
 				$dienthoai . "','" . $email . "','" . $diachi . "')";
 				$query_dangky = mysqli_query($connect, $sql_dangky);
+				
 				if ($query_dangky) {
 					echo '<p style="color:green">Bạn đã đăng ký thành công</p>';
 					$_SESSION['dangky'] = $taikhoan;

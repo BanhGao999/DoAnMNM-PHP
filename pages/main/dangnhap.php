@@ -2,8 +2,8 @@
 	
 	if(isset($_POST['dangnhap'])){
 		$taikhoan = $_POST['taikhoan'];
-        $matkhau = $_POST['password'];
-		//$matkhau = md5($_POST['password']);
+        //$matkhau = $_POST['password'];
+		$matkhau = md5($_POST['password']);
 		$sql = "SELECT * FROM tbl_dangky ,tbl_admin WHERE tbl_dangky.taikhoan='".$taikhoan."' AND tbl_dangky.matkhau='".$matkhau."'  LIMIT 1";
 		$row = mysqli_query($connect,$sql);
 		$count = mysqli_num_rows($row);
