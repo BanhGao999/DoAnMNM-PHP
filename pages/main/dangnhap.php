@@ -13,7 +13,7 @@
 			$_SESSION['email'] = $row_data['email'];
             $_SESSION['id_khachhang']= $row_data['id_khachhang'];
 			header("Location:index.php");
-		}elseif($taikhoan=='admin'){
+		}else if($taikhoan=='admin'){
             header("Location:admincp/login.php");
         }else{
 			echo '<p style="color:red">Mật khẩu hoặc Email sai ,vui lòng nhập lại.</p>';

@@ -13,32 +13,32 @@
                             include("modules/quanlydanhmucsp/them.php");
                             include("modules/quanlydanhmucsp/lietke.php");
 
-                        }elseif($bientam=='quanlydanhmucsanpham' && $query=='sua'){
+                        }else if($bientam=='quanlydanhmucsanpham' && $query=='sua'){
                             include("modules/quanlydanhmucsp/sua.php");
 
-                        }elseif($bientam=='quanlysanpham' && $query=='them'){
+                        }else if($bientam=='quanlysanpham' && $query=='them'){
                             include("modules/quanlysp/them.php");
                             include("modules/quanlysp/lietke.php");
 
-                        }elseif($bientam=='quanlysanpham' && $query=='sua'){
+                        }else if($bientam=='quanlysanpham' && $query=='sua'){
                             include("modules/quanlysp/sua.php");
 
-                        }elseif($bientam=='quanlynguoidung' && $query=='them' ){
+                        }else if($bientam=='quanlynguoidung' && $query=='them' ){
                             include("modules/quanlynguoidung/lietke.php");
                             
-                        }elseif($bientam=='quanlynguoidung' && $query=='sua'){
+                        }else if($bientam=='quanlynguoidung' && $query=='sua'){
                             include("modules/quanlynguoidung/sua.php");
                             
-                        }elseif($bientam=='quanlydonhang' && $query=='them' ){
+                        }else if($bientam=='quanlydonhang' && $query=='them' ){
                             include("modules/quanlydonhang/lietke.php");
                             
-                        }elseif($bientam=='quanlydonhang' && $query=='sua'){
+                        }else if($bientam=='quanlydonhang' && $query=='sua'){
                             include("modules/quanlydonhang/sua.php");
                             
-                        }elseif($bientam=='quanlydonhang' && $query=='xemdonhang'){
+                        }else if($bientam=='quanlydonhang' && $query=='xemdonhang'){
                             include("modules/quanlydonhang/xemdonhang.php");
                             
-                        }elseif($bientam=='dangxuat'){
+                        }else if($bientam=='dangxuat'){
                             include("../login.php");
                         }
                         else{

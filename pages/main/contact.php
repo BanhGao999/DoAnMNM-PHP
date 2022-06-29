@@ -10,8 +10,8 @@
  </style>
 <div class="contacts">
 <p>Contact</p>
- <h3>Store AMI</h3>
- <p>Facebook : <a href="https://www.facebook.com/profile.php?id=100009999485112"> Bấm vào đây</a></p>
- <p>SĐT : 0669029353</p>
- <p>STK : 08200115297</p>
+ <h3>Nhóm 3 - Store</h3>
+ <p>Facebook : <a href="https://www.facebook.com/"> Bấm vào đây</a></p>
+ <p>SĐT : 0823014317</p>
+ <p>STK : 9704030163913137</p>
  </div>

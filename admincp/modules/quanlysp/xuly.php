@@ -14,15 +14,7 @@
     $hienthi=$_POST['hienthi'];
     $danhmuc=$_POST['danhmuc'];
     
-   
-
-    
-
     if(isset($_POST['themsanpham'])){
-
-        
-
-
         if(isset($_FILES['hinhanh'])){
             if($file['type']== 'image/jpeg'||$file['type']== 'imgae/jpg'||$file['type']== 'image/png'){
                 
@@ -40,13 +32,7 @@
         }
        
 
-    }
-    
-    
-    
-    
-    
-    elseif(isset($_POST['suasanpham'])){
+    } else if (isset($_POST['suasanpham'])){
         if($hinhanh!=''){
             move_uploaded_file($hinhanh_tmp,'uploads/'.$hinhanh);
             $sql_sua="UPDATE tbl_sanpham SET tensanpham='".$tensanpham."',masanpham='".$masanpham."',
@@ -67,10 +53,6 @@
         mysqli_query($connect,$sql_sua);
         header('Location:../../index.php?action=quanlysanpham&query=them');
     }
-    
-    
-    
-    
     else{
         
         $id=$_GET['idsanpham'];
@@ -83,4 +65,3 @@
         mysqli_query($connect,$sql_xoa);
         header('Location:../../index.php?action=quanlysanpham&query=them');
     }
-?>

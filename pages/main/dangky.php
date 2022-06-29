@@ -58,14 +58,19 @@
 			$diachi = $_POST['diachi'];
 			if (!$tenkhachhang || !$taikhoan || !$matkhau || !$rematkhau || !$email || !$dienthoai || !$diachi) {
 				echo "Vui lòng nhập đầy đủ thông tin.";
-			} elseif ($matkhau != $rematkhau) {
+			} else if ($matkhau != $rematkhau) {
 				echo "mat khau chua trung";
 			} else {
 				$sql_dangky = "INSERT INTO tbl_dangky(hovaten,taikhoan,matkhau,sodienthoai,email,diachi) 
 				VALUES('" . $tenkhachhang . "','" . $taikhoan . "','" . $matkhau . "','" . 
 				$dienthoai . "','" . $email . "','" . $diachi . "')";
 				$query_dangky = mysqli_query($connect, $sql_dangky);
-				
+				/* INSERT INTO `tbl_dangky` (`id_khachhang`, `hovaten`, `taikhoan`, `matkhau`, `sodienthoai`, `email`, `diachi`, `chucvu`) 
+				VALUES (NULL, 'Nguyễn Hồng Chương','chuong', 'chuong', '0839257134', 'chuong@gmail.com', 'dsfadfcxv dsfasdf', '0')*/
+				/* 
+				"INSERT INTO tbl_dangky(hovaten,taikhoan,matkhau,sodienthoai,email,diachi,chucvu)
+				VALUES('Nguyễn Hồng Chương','chuong','c157f66b4f34845b2d242afd45b48c0c','0729441753','chuong@gmail.com','sdfasdfadsff')"
+				*/
 				if ($query_dangky) {
 					echo '<p style="color:green">Bạn đã đăng ký thành công</p>';
 					$_SESSION['dangky'] = $taikhoan;
